@@ -3,131 +3,80 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="https://html5-templates.com/" />
-    <title>Afolabi's website </title>
-    <meta name="description" content="Simplified Bootstrap template with sticky menu">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/sticky-menu.css" rel="stylesheet">
+    <title>Afolabi's Website</title>
+    <meta name="description" content="A place to collate and host personal projects, experiences etc">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle menu</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- <a class="navbar-brand page-scroll" href="#page-top">Welcome</a> -->
-            </div>
 
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a class="page-scroll" href="#page-top">About me</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">Projects</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#whatwedo">Contact</a>
-                    </li>
-                </ul>
-            </div>	<!-- .navbar-collapse -->
-        </div>		<!-- .container -->
-    </nav>
-    <!-- About me   -->
-    <section id="welcome" class="welcome-section">
-        <div class="container">
-            <div class="row">
-				<div class = "col-lg-4">
-					<img src="resources/fullBody.jpeg" height="400" width="300">
-				</div>
-			
-                <div class="col-lg-8">
-                    <h1>About me</h1>
-                    <p>A rising senior at Louisiana State University working towards two degrees in Electrical engineering and Computer Science,
-					 I have a  passion for technology spanning across design and creation of circuits to software and development of programs. </p>
-					 <p> I have interned with Chevron for 2 years, The first year I mainly spent analyzing application interfaces as well as integrations. 
-					 The second year I spent working on automating deployment processes, working heavily with Powershell and Jenkins. I am also a student worker
-					 for the Physics department at my school, Louisiana State University. My experiences have afforded me the opportunity to grow proficiency in languages like
-					 C++, Javascript, HTML/CSS, Batch scripting, PHP, MYSQL and work with various tools like Jenkins, OpenCV, BASIC Stamp editor. My resume can be found <a href="https://drive.google.com/file/d/0Bxq3fMfUNTulRVYwUml4NFRBMWs/view?usp=sharing">here. </a> </p>
-					 <p> Outisde of school and work, I am an active memeber of  Institute of Electrical and Electronics Engineers (IEEE) LSU chapter as well as the
-						African Student Organization of which I am the director of communications. I enjoying volunteering with friends as well as other hobbies like
-						swimming, skating and video games.</p>
-                </div>
-				
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="ProjectHead">Projects</h1>
-						<h3> C.H.I.C.K: Climate High-altitude Instrumental Collection Kit </h3>
+<body>
+	<!--
+	<header>
+		<div id="logo"><img src="/logo.png">HTML5&nbsp;Layout</div>
+		<nav>  
+			<ul>
+				<li><a href="/">Home</a>
+				<li><a href="https://html-css-js.com/">HTML</a>
+				<li><a href="https://html-css-js.com/css/code/">CSS</a>
+				<li><a href="https://htmlcheatsheet.com/js/">JS</a>
+			</ul>
+		</nav>
+	</header>
+	-->
+	<section class="about-me">
+		<aside>
+			<div class="img-wrap">
+				  <img id="proPic" src="resources/fullBody.jpeg">
+			</div>
+		</aside>
+		<h2> About me </h2><br>
+			<p>A rising senior at Louisiana State University working towards two degrees in Electrical engineering and Computer Science,
+			 I have a  passion for technology spanning across design and creation of circuits to software and development of programs. </p><br>
+			 <p> I have interned with Chevron for 2 years, The first year I mainly spent analyzing application interfaces as well as integrations. 
+			 The second year I spent working on automating deployment processes, working heavily with Powershell and Jenkins. I am also a student worker
+			 for the Physics department at my school, Louisiana State University. My experiences have afforded me the opportunity to grow proficiency in languages like
+			 C++, Javascript, HTML/CSS, Batch scripting, PHP, MYSQL and work with various tools like Jenkins, OpenCV, BASIC Stamp editor. My resume can be found <a href="https://drive.google.com/file/d/0Bxq3fMfUNTulRVYwUml4NFRBMWs/view?usp=sharing">here. </a> </p><br>
+			 <p> Outisde of school and work, I am an active memeber of  Institute of Electrical and Electronics Engineers (IEEE) LSU chapter as well as the
+				African Student Organization of which I am the director of communications. I enjoying volunteering with friends as well as other hobbies like
+				swimming and skating.</p><br>
+	</section>
+	<section id="pageContent">
+		<span> <h2> Projects </h2><br></span>
+		<main role="main">
+			<article>
+				<h2> C.H.I.C.K: Climate High-altitude Instrumental Collection Kit </h2>
 						<p><span style="font-weight:bold">Description</span>: CHICK is a device that is designed to Record external temperatures, air pressure, and humidity measurements as a function of altitude up to 100,000ft (30.48km). 
 						Our team then compared recorded data to <a href="https://en.wikipedia.org/wiki/International_Standard_Atmosphere">standard atmospheric model</a> to ensure the integrity of our data as a loose guide while 
 						comparing slightly more intensely with the <a href="http://weather.uwyo.edu/upperair/sounding.html"> University of Wyoming Sounding Balloon data.</a> which gives a more recent profile of these external variables.
 						This proejct was sponsored by Louisiana State University as part of the <a href="http://laspace.lsu.edu/aces/">LaAces Program</a>.</p>
-						<p><span style="font-weight:bold">Links</span>: Flight Readiness Presentation, Results Presentation, Raw Data </p>
-						<h3>Gun Head</h3>
+						<p><span style="font-weight:bold">Links (Google Drive)</span>: <a href="https://drive.google.com/open?id=1t-yXyX3rbs_rupvb2VJD5glOJVoveIbL">Flight Readiness Presentation</a>, <a href="https://drive.google.com/file/d/1hcrJtNccpInfrN0poczzQ26vY4k-9_3B/view?usp=sharing">Post Flight Analysis</a>, <a href="https://drive.google.com/file/d/1ONsaKYIzR5FKiM6HVfu_wtD3sty2Bmqd/view?usp=sharing">Raw Data</a> </p>
+			</article>
+			<article>
+				<h2>Gun Head</h2>
 						<p><span style="font-weight:bold">Description</span>:  Gun head is a class project developed for the object oriented Programming class (CSC 3380) at LSU. It is an arcade-style first person shooter game
 							which uses a trained model for detecting faces in OpenCV to track a user and allow them to control an onscreen character. Our group used OpenCV
 							for the face recognition model and used Unity as the game engine. The user plays as a crypt keeper whose objective is to kill as many zombies as 
 							possible to break a high score.</p>
 							<p><span style="font-weight:bold">Links</span>: <a href="https://www.youtube.com/watch?v=POiYXURz7xE">YouTube Demo </a>, <a href="https://github.com/a-folabi/GunHead"> GitHub Page </a>  </p>
-						<h3>LaAces Website</h3>
-						<p><span style="font-weight:bold">Description</span>:  As a student worker, I work in the physics department at Louisiana State University, more specifically the Aerospace Catalyst Experiences for Students (ACES) department.
-							Part of my responsibilities include creating and maintaining various pages. I use PHP scripts to pull from a MYSQL database and populate HTML templates. I create queries and update
-						    the website as needed.</p>
-						<p><span style="font-weight:bold">Links</span>: <a href="http://laspace.lsu.edu/aces/">Website</a> </p>
-                </div>
-            </div>
-        </div>
-    </section>
+			</article>
+			<article>
+				<h2>LaAces Website</h2>
+					<p><span style="font-weight:bold">Description</span>:  As a student worker, I work in the physics department at Louisiana State University, more specifically the Aerospace Catalyst Experiences for Students (ACES) department.
+						Part of my responsibilities include creating and maintaining various pages. I use PHP scripts to pull from a MYSQL database and populate HTML templates. I create queries and update
+					    the website as needed.</p>
+					<p><span style="font-weight:bold">Links</span>: <a href="http://laspace.lsu.edu/aces/">Website</a> </p>
+			</article>
+		</main>
+	</section>
+	<footer>
+		<address>
+			<p> If you would like to get in contact with me, feel free to <a href="mailto:aige1@lsu.edu">email me</a>. Or connect with me on <a href="https://www.linkedin.com/in/afolabi-ige/">linkedIn</a>.
+				Also check out some of my works in progress on <a href="https://github.com/a-folabi">GitHub</a>. | Also, a huge thanks to <a href="https://html5-templates.com/" target="_blank" rel="nofollow">HTML5 Templates</a> for provding the template I used. </p>
+		</address>
+	</footer>
 
-    <!-- Contact me and references -->
-    <section id="whatwedo" class="whatwedo-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Contact Section</h1>
-					<p> If you would like to get in contact with me, feel free to <a href="mailto:aige1@lsu.edu">email me</a>. Or connect with me on <a href="https://www.linkedin.com/in/afolabi-ige/">linkedIn</a>.
-						Also check out some of my works in progress on <a href="https://github.com/a-folabi">GitHub</a>. <p> 
-					<p> Also, a huge thanks to <a href="https://html5-templates.com/" target="_blank" rel="nofollow">HTML5 Templates</a> for provding the template I used. </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section 
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Contact Section</h1>
-                </div>
-            </div>
-        </div>
-    </section>
-	-->
-	
-	<a id="back2Top" title="Back to top" href="#">&#10148;</a>
-	
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/sticky-menu.js"></script>
 
 </body>
 
