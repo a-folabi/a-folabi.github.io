@@ -82,9 +82,15 @@
 
 			@include breakpoint('<=small') {
 				width: auto;
-				overflow-wrap: break-word; // Helps prevent long words from breaking layout
-				// Consider adding hyphens for better visual appeal if needed, e.g.:
-				// hyphens: auto;
+				overflow-wrap: break-word;
+			}
+		}
+	}
+
+	h3, h4, h5, h6 {
+		&.major {
+			@include breakpoint('<=small') {
+				display: inline-block; // This makes the border fit content for these specific headings
 			}
 		}
 	}
